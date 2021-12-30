@@ -1,0 +1,279 @@
+/*propriétés de la bannière (logo et titre)*/
+.ban
+{
+    display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:1.7%;
+
+}
+/*division correspondant à l'entete, contenant le logo, le titre et le menu du site */
+.entete
+{
+    background-color: #2c3e50;
+    padding-top: 0.8%;
+    padding-left: 0.8%;
+    padding-right: 0.8%;
+    padding-bottom: 2.1%;
+}
+.acces
+{
+	margin-right:0%;
+	margin-left:80%;
+	color: white;
+	font-size:75%;
+}
+
+/* propriétés des accès*/
+.menuacces{
+	text-decoration: none;
+	color:white;
+}
+
+.menuacces:visited{
+	color: white;
+}
+
+.menuacces:hover, a:focus, a:active{
+	text-decoration: underline;
+	color:white;
+}
+
+
+/* division nav contenant le menu */
+.menu{
+	margin: 2% auto 0;
+
+	position: relative;
+	width: 590px; /*ne pas changer en % car sinon menu cassé*/
+	height: 50px; /*idem*/
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+
+
+ /*pour eviter soulignement des liens visités*/
+.menu:hover, a:focus, a:active{
+	text-decoration:none;
+}
+
+.menu:hover, a:visited{
+	text-decoration:none;
+}
+
+
+/* propriété des balises a de la classe menu, design des éléments du menu */
+nav a {
+	line-height: 50px; /*idem*/
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+
+
+
+
+/* propriétés d'animation du menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-accueil, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #2EB2FF;
+}
+nav .start-formation, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color:#FFBD4A;
+}
+nav .start-cartes, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color:#99E265;
+}
+nav .start-temoignages, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #FF5C5C;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color:#A2A6A8;
+}
+/*fin propriétés d'animation du menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+body
+{
+    padding: 0%;
+    margin: 0%;
+    background-color: #F2F2F2;
+	font-family:'Oxygen', sans-serif;
+}
+
+.contenu
+{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100%;
+    text-align:justify;
+    padding-bottom: 3%;
+	padding-top: 2%;
+	color:#222538;
+}
+
+.titre
+{
+    text-align: center;
+    font-size:220%;
+    color: #A2A6A8;
+    padding-bottom: 2%;
+}
+
+/*style des liens de la page contact*/
+.liens
+{
+    text-decoration:underline;
+}
+
+.liens:visited
+{
+    color:#0000FF;
+    text-decoration:underline;
+}
+
+.liens:active
+{
+    text-decoration:underline;
+}
+
+.liens:hover
+{
+    text-decoration: underline;
+}
+
+.liens:link
+{
+    text-decoration: underline;
+}
+/*fin style des liens de la page contact*/
+
+.nous
+{
+    padding-bottom: 1.5%;
+    text-align: left;
+}
+
+label{
+	display: block;
+	font: 75% 'Oxygen', sans-serif;
+	font-size:100%;
+	margin-top:5%;
+	margin-bottom:1%;
+	
+}
+
+form:active
+{
+	
+	border-radius: 10px 10px 10px 10px;
+	border-color:#2EB2FF;	
+}
+
+form
+{
+	border-color:#2EB2FF;
+	border-radius:10px 10px 10px 10px;
+}
+
+input, textarea /*Pour changer la police*/
+{
+	font-family:'Oxygen',sans-serif;
+	font-size:100%;
+	border-color:#2EB2FF;
+}
+
+textarea
+{
+	width:50%;
+	height:30%;
+}
+
+textarea:active
+{
+	border-color:#2EB2FF;
+}
+
+button
+{
+	margin-top:3%;
+	font-family: 'Oxygen', sans-serif;
+	width:10%;
+	border-color:#2EB2FF;
+	
+}
+
+.univ
+{
+    width: 70%;
+    padding-top: 4%;
+    margin-left: 15%;
+    margin-right: 15%;    
+}
+
+footer{
+    font-family: 'Titillium Web', sans-serif;
+	color:white;
+	background-color: #2c3e50;
+    padding-top: 0.8%;
+    padding-left: 0.8%;
+    padding-right: 0.8%;
+	padding-bottom: 2.1%; 
+    text-align:center;
+    margin-bottom:0%;
+	margin-top:20%; /*fait en sorte que le footer soit en bas de page. modifier la valeur du % si on rajoute du contenu dans cette page*/
+	width:auto;
+	bottom:0;
+	left:0%;
+	right:0%;
+	font-size:75%;
+}
+
+
+.logofooter
+{
+	width:3.5%; /*50px*/
+}
