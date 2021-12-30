@@ -1,0 +1,605 @@
+/*propriétés de la bannière (logo et titre)*/
+.ban
+{
+    display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:1.7%;
+
+}
+
+/*division correspondant à l'entete, contenant le logo, le titre et le menu du site */
+.entete
+{
+    background-color: #2c3e50;
+    padding-top: 0.8%;
+    padding-left: 0.8%;
+    padding-right: 0.8%;
+    padding-bottom: 2.1%;
+}
+.acces
+{
+	margin-right:0%;
+	margin-left:80%;
+	color: white;
+	font-size:75%
+}
+
+/* propriétés des accès*/
+.menuacces{
+	text-decoration: none;
+	color:white;
+}
+
+.menuacces:visited{
+	color: white;
+}
+
+.menuacces:hover, a:focus, a:active{
+	text-decoration: underline;
+	color:white;
+}
+
+
+
+/* division nav contenant le menu */
+.menu{
+	margin: 2% auto 0;
+
+	position: relative;
+	width: 590px; /*ne pas changer en % car sinon menu cassé*/
+	height: 50px; /*idem*/
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+
+
+ /*pour eviter soulignement des liens visités*/
+.menu:hover, a:focus, a:active{
+	text-decoration:none;
+}
+
+.menu:hover, a:visited{
+	text-decoration:none;
+	
+}
+.menu:hover, a:link{
+    text-decoration:none;
+}
+
+/* propriété des balises a de la classe menu, design des éléments du menu */
+nav a {
+	line-height: 50px; /*idem*/
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+
+
+
+
+/* propriétés d'animation du menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-accueil, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #2EB2FF;
+}
+nav .start-formation, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color:#FFBD4A;
+}
+nav .start-cartes, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color:#99E265;
+}
+nav .start-temoignages, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #FF5C5C;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color:#A2A6A8;
+}
+/*fin propriétés d'animation du menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*propriétés globales de la page */
+body {
+	font-family: 'Oxygen', sans-serif;
+    background: #f2f2f2;
+    margin: 0%;
+	padding:0%;	
+}
+
+/*sous menu de la partie formation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.menupage /*div*/
+{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top:4%;
+	margin-bottom: 4%;
+}
+
+.menuinterne /*ul*/
+{
+	display: flex;
+  	justify-content: space-between;
+	list-style-type:none;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.menuinterne2
+{
+	margin-top: 5%;
+	display: flex;
+  	justify-content: space-between;
+	list-style-type:none;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.textemenu /*li*/
+{
+	display: inline;
+	color: #FFFFFF;
+	margin-left: 1%;
+	margin-right: auto;
+	padding: auto;
+	width : 30%;
+	text-align: center;
+	/*margin: 5%;*/
+	
+		
+}
+.textemenu2
+{
+	display: inline;
+	color: #FFFFFF;
+	margin-left: 10%;
+	margin-right: auto;
+	padding: auto;
+	width : 30%;
+	text-align: center;
+	/*margin: 5%;*/
+}
+/* couleur des bordures*/
+.bleu
+{
+	border: solid #2EB2FF;
+	padding-left: 16%;
+	padding-right: 16%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-radius: 5px 5px 5px 5px;
+	background-color:#2EB2FF ;
+	color: #FFFFFF;
+	text-decoration:none;
+	width: auto;
+	/*font-size: 100%;*/
+}
+
+.rouge
+{
+	border: solid #FF5C5C;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-radius: 5px 5px 5px 5px;
+	background-color:#FF5C5C ;
+	color: #FFFFFF;
+	text-decoration:none;
+	/*width: auto;*/
+
+}
+
+.vert
+{
+	border: solid #99E265;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-radius: 5px 5px 5px 5px;
+	background-color:#99E265 ;
+	color: #FFFFFF;
+	text-decoration:none;
+	/*width: auto;*/
+
+}
+
+.jaune{
+	border: solid #FFBD4A;
+	padding-left: 13%;
+	padding-right: 13%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-radius: 5px 5px 5px 5px;
+	background-color:#FFBD4A ;
+	color: #FFFFFF;
+	text-decoration:none;
+	/*width: auto;*/
+
+}
+
+.gris{
+	border: solid #A2A6A8;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-radius: 5px 5px 5px 5px;
+	background-color:#A2A6A8 ;
+	color: #FFFFFF;
+	text-decoration:none;
+	/*width: auto;*/
+}
+/*fin couleur des bordures*/
+
+
+/*fin du sous menu de la partie formation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*couleurs des titres h1*/
+.h1bleu
+{
+	text-align: center;
+	font-size:220%;
+	color:#2EB2FF ;
+	font-family:'Titillium Web', sans-serif;
+	margin-top:5%;
+}
+
+.h1rouge
+{
+	text-align: center;
+	font-size:220%;
+	color:#FF5C5C ;
+	font-family:'Titillium Web', sans-serif;
+	margin-top:5%;
+
+}
+
+.h1vert
+{
+	text-align: center;
+	font-size:220%;
+	color:#99E265 ;
+	font-family:'Titillium Web', sans-serif;
+	margin-top:5%;
+}
+
+.h1jaune
+{
+	text-align: center;
+	font-size:220%;
+	color:#FFBD4A ;
+	font-family:'Titillium Web', sans-serif;
+	margin-top:5%;
+}
+
+.h1gris
+{
+	text-align: center;
+	font-size:220%;
+	color:#A2A6A8 ;
+	font-family:'Titillium Web', sans-serif;
+	margin-top:5%;
+}
+/*fin couleurs des titres h1*/
+/*Couleurs des titres h3*/
+.h3bleu
+{
+	color: #2EB2FF;
+	font-size: 150%;
+}
+
+/*image pour la partie "l'IUT*/
+.image1
+{
+	width:50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.image2
+{
+	width:50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	border-radius: 10px 10px 10px 10px;	
+}
+
+.image3
+{
+	width:50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	border-radius: 10px 10px 10px 10px;	
+}
+
+.image4
+{
+	width:50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	border-radius: 10px 10px 10px 10px;
+}
+
+/*div des drapeaux pour les positionner correctement*/
+.drapeaux
+{
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+}
+
+/*style de la div texte, qui englobe la classe l'IUT, le titre h1, l'image et les paragraphes*/
+.texte
+{
+	
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*style des paragraphes*/
+.para
+{
+	font-family:'Oxygen', sans-serif;
+	font-size:100%;
+	color:#222538;
+	text-align:justify;
+}
+
+/*liste des parcours dans la partie BUT*/
+.parcours
+{
+	font-family:'Oxygen', sans-serif;
+	font-size:100%;
+	color:#222538;
+}
+/*mise en page des logos dans la partie l'IUT*/
+.entre_partenaires
+{
+	width: 20%;
+	margin-right:2%;
+	margin-left:2%;
+	
+}
+
+.partenaires1
+{
+	text-align: center;
+	vertical-align: middle;
+	border-color: #2EB2FF;
+	margin-bottom:4%;
+	margin-top:3%;
+}
+
+.partenaires2
+{
+	text-align: center;
+	vertical-align: middle;
+	border-color: #2EB2FF;
+	margin-bottom:3%;
+}
+
+.universite
+{
+	text-align:center;
+	margin-top:3%;
+	margin-bottom: 5%;
+}
+
+.univ
+{
+	width:20%;
+	
+}
+
+
+/*fin mise en page des logos dans la partie l'IUT*/
+/*style des liens partie IUT*/
+.liens_IUT
+{
+	font-size:100%;
+	text-decoration:underline;
+	
+}
+
+.liens_IUT:visited
+{
+	color:#0000FF;
+	text-decoration: underline;
+}
+
+.liens_IUT:active
+{
+	text-decoration:underline;
+}
+
+.liens_IUT:hover
+{
+	text-decoration: underline;
+}
+
+.liens_IUT:link
+{
+	text-decoration:underline;
+}
+/*fin style des liens partie IUT*/
+
+/*style du lien site du gouvernement*/
+.gouv
+{
+	text-decoration:underline;
+}
+
+.gouv:visited
+{
+	color:#0000FF;
+	text-decoration: underline;
+}
+
+.gouv:active
+{
+	text-decoration:underline;
+}
+
+.gouv:hover
+{
+	text-decoration:underline;
+}
+
+.gouv:link
+{
+	text-decoration:underline;
+	color:#0000FF;
+}
+/*fin style du lien site du gouvernement*/
+
+/*style des liens des diapos*/
+.diapos
+{
+	text-decoration:underline;
+}
+
+.diapos:visited
+{
+	color:#0000FF;
+	text-decoration:underline;
+}
+
+.diapos:active
+{
+	text-decoration:underline;
+	
+}
+
+.diapos:hover
+{
+	text-decoration:underline;
+}
+
+.diapos:link
+{
+	text-decoration:underline;
+	color:#0000FF;
+}
+/*fin style des liens des diapos*/
+
+/*style des phrases en gras*/
+.gras
+{
+	
+	font-weight: bold;
+	color:#222538;	
+	
+}
+
+a.gras:active
+{
+	color:#222538;
+}
+/*fin style des phrases en gras*/
+
+
+/*après l'IUT*/
+.sousoustitre
+{
+	font-weight: bold;
+	color:#222538;
+	margin-top: 3%;
+}
+
+.debouches
+{
+	text-align: justify;
+	color:#222538;
+}
+
+.poursuite
+{
+	text-align: justify;
+	color:#222538;
+
+}
+
+
+
+footer{
+    font-family: 'Titillium Web', sans-serif;
+	color:white;
+	background-color: #2c3e50;
+    padding-top: 0.8%;
+    padding-left: 0.8%;
+    padding-right: 0.8%;
+	padding-bottom: 2.1%; 
+    text-align:center;
+	margin-bottom:0%;
+	margin-top:4%;
+    position:absolute;
+    width:auto;
+	/*bottom:0%;*/
+    left:0%;
+	right:0%;
+	font-size:75%;
+	
+}
+
+
+.logofooter
+{
+	width:3.5%; /*50px*/
+}
