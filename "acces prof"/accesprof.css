@@ -1,0 +1,71 @@
+body{
+    font-family:'Oxygen', sans-serif;
+    background-color:#F5F7FC;
+    margin: 0%;
+    padding:0%;    
+
+}
+
+
+label {
+    display: block;
+    font: 75% 'Oxygen', sans-serif;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+    /*font-size:100%;*/
+    font-family: 'Oxygen', sans-serif;
+}
+
+.cadre_id{
+    background-color:#FFFFFF;
+    font-family: 'Oxygen', sans-serif;
+    box-shadow:10px 10px 50px grey;
+    margin:0px ;
+    margin-top:10px;
+    margin-right:15px;
+    margin-left:15px;
+    padding:20px;
+    border-radius: 20px 20px 20px 20px;
+    width:auto;
+    text-align:center;
+    margin-bottom:20%;
+
+}
+
+.logo
+{
+    display: block;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-top : 40px;
+}
+
+footer{
+	font-family: 'Titillium Web', sans-serif;
+	color:white;
+	background-color: #2c3e50;
+    padding-top: 0.8%;
+    padding-left: 0.8%;
+    padding-right: 0.8%;
+	padding-bottom: 2.1%;
+	text-align:center;
+    margin-bottom:0%;
+    margin-top:4%;
+    position: absolute;
+    width: auto;
+    bottom:0%;
+    left:0%;
+    right:0%;
+    font-size:75%;
+}
+
+
+.logofooter
+{
+	width:3.5%;
+}
